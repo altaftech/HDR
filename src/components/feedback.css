@@ -37,8 +37,8 @@ input[type="checkbox"] {
     border-radius: 15px;
     padding: 0 10px;
     position: fixed;
-    right: 60px;
-    top: 40px;
+    right: 2px;
+    top: 55px;
 }
 
 .button-24:hover+.hide {
@@ -53,7 +53,7 @@ input[type="checkbox"] {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    background: #31473A;
+    background: #3F418C;
     border-radius: 20px;
     width: 512px;
     height: 530px;
@@ -145,31 +145,6 @@ input::placeholder {
     -webkit-text-stroke: 0.2px #EDF4F2;
 }
 
-.hover1:hover {
-    color: rgb(255, 0, 0);
-
-}
-
-.hover2:hover {
-    color: rgb(255, 106, 0);
-
-}
-
-.hover3:hover {
-    color: rgb(251, 255, 120);
-
-}
-
-.hover4:hover {
-    color: rgb(255, 255, 0);
-
-}
-
-.hover5:hover {
-    color: rgb(24, 159, 14);
-
-}
-
 .one {
     color: rgb(255, 0, 0);
 
@@ -230,15 +205,8 @@ input::placeholder {
         border: 2px solid #F9EDED;
     }
 
-    .hide {
-        padding: 0 8px;
-        right: 5px;
-        top: 45px;
-        font-size: 12px;
-    }
-
     .container {
-        width: 90%;
+        width: 98%;
     }
 
     .review-container {
