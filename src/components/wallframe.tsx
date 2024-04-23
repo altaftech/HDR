@@ -44,7 +44,7 @@ const Wallframe: React.FC = () => {
     };
 
     const images: ImageData[] = [
-        { src: "/Wallpapers/HDR_Wallpaper_001.jpg", alt: "HDR Wallpaper 001", width: 3000, height: 2000 },
+        { src: "./Wallpapers/HDR_Wallpaper_001.jpg", alt: "HDR Wallpaper 001", width: 3000, height: 2000 },
         { src: "/Wallpapers/HDR_Wallpaper_002.jpg", alt: "HDR Wallpaper 002", width: 7971, height: 5314 },
         { src: "/Wallpapers/HDR_Wallpaper_003.jpg", alt: "HDR Wallpaper 003", width: 5120, height: 2880 },
         { src: "/Wallpapers/HDR_Wallpaper_004.jpg", alt: "HDR Wallpaper 004", width: 6016, height: 6016 },
