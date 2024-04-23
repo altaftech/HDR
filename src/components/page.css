@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.view {
+    position: relative;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2A3132;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.popup-image {
+    margin: 70px auto;
+    height: 90vh;
+    object-fit: contain;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    transform: translate(-50%, -10px);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, .5);
+    font-size: 13px;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.over {
+    color: #fff;
+    background: #000;
+    font-size: 13px;
+    padding: 2px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    opacity: 0; 
+    transition: opacity .5s ease;
+}
+
+.show1:hover + .over1,
+.show2:hover + .over2,
+.show3:hover + .over3 {
+    opacity: 1; 
+}
+
+.show1+.show2+.show3{
+    position: relative;
+    
+}
+
+.over1{
+    position: absolute;
+    top: 48px;
+    left: 2px;
+}
+
+.over2{
+    position: absolute;
+    top: 48px;
+    right: 36px;
+}
+
+.over3{
+    position: absolute;
+    top: 48px;
+    right: 2px;
+}
+
+@media (max-width: 768px) {
+    .popy {
+        gap: 8px;
+    }
+
+    .popy2 {
+        gap: 8px;
+    }
+
+    .popy3 {
+        gap: 12px;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+}
